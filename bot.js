@@ -5,8 +5,8 @@ const User=require('./models/user');
 mongoose.connect("mongodb://localhost:27017/paytakht2",{})
 
  
-       mainchatid=707870508;
-       const memoryid=-1002920032566;
+       mainchatid=7078705081;
+       const memoryid=-10029200325661;
        const [inlineKeyboard,noadminkeyboard] = require('./keyboard');
        const myfunctions=require('./funcs')
         const maxnumusersmemorized=2;
@@ -14,7 +14,7 @@ let users=[{id:0}]
 let newuserindex=0; 
  
 // ایجاد ربات
-const bot = new TelegramBot('8238464476:AAGZTGoeAZZ207zsxQyn1S62EyfZkJikph4', {
+const bot = new TelegramBot('yourapi', {
     polling: {
         interval: 300,
         autoStart: true,
